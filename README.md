@@ -48,5 +48,5 @@ Run mission_report.py to pre-collect real AIS and
 satellite data, saving them as frozen files that 
 can be uploaded into the app to demonstrate the 
 system using actual live data:
-- demo_ships_frozen.csv  → upload as Input 1
-- demo_sats_frozen.csv   → upload as Input 2
+- demo_ships_frozen.csv  → upload as Input 1 (AIS Ship Data)
+- demo_sats_frozen.csv   → upload as Input 2 (Payload Telemetry)
