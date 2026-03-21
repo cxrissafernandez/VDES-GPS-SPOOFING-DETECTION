@@ -1,7 +1,6 @@
 # VDES GPS Spoofing Detection System
 
-FYP: Secure Monitoring of Ship Location using VDES Technology and Satellite Communication
-NTU EEE Final Year Project 2026
+NTU EEE Final Year Project 2026: Secure Monitoring of Ship Location using VDES Technology and Satellite Communication
 
 ## Quick Start
 1. pip install -r requirements.txt
