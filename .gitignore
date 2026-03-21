@@ -1,0 +1,8 @@
+live_ship_data.csv
+demo_ships_frozen.csv
+demo_sats_frozen.csv
+__pycache__/
+.env
+*.pyc
+*.csv
+test_scenarios/
