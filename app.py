@@ -191,7 +191,7 @@ else:
             else:
                 df_sat = df_sat.rename(columns={'lat': 'sat_lat', 'lon': 'sat_lon'})
                 if 'mmsi' in df_sat.columns:
-                    # Per-ship matching - mocks inteded A*STAR payload log after implementation (MMSI co-logged per message)
+                    # Per-ship matching - mocks intended A*STAR payload log after implementation (MMSI co-logged per message)
                     st.session_state['sat_data'] = df_sat[['mmsi', 'sat_lat', 'sat_lon', 'time_utc']].copy()
                     st.sidebar.info(f"✅ Loaded {len(df_sat)} payload entries. Matching by MMSI.")
                 else:
