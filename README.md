@@ -1,7 +1,6 @@
 # VDES GPS Spoofing Detection System
 
-NTU EEE Final Year Project 2026: Secure Monitoring of Ship Location using VDES Technology and Satellite Communication   
-Author: Carissa Metta Fernandez
+NTU EEE Final Year Project 2026: Secure Monitoring of Ship Location using VDES Technology and Satellite Communication
 
 ## Quick Start
 1. pip install -r requirements.txt
@@ -20,32 +19,8 @@ Replace the placeholders in:
 
 ## Modules
 - app.py               : Main Streamlit dashboard
-- data_collector.py    : Live AIS stream collector
+- data_collector.py    : Live AIS stream collector  
 - decoder.py           : NMEA AIS decoder
 - validator.py         : Haversine + N2YO satellite API
 - scenario_builder.py  : Synthetic test data generator
 - mission_report.py    : Offline demo workflow
-
-## Testing
-### Simulation Mode
-Use the Simulation Mode toggle in the app to generate 
-synthetic satellite positions on the fly from loaded 
-AIS data. Three scenarios available: All Secure, 
-All Spoofed, and Mixed.
-
-### Test Scenario Files
-Click GENERATE TEST SCENARIOS in the app to save 
-3 reusable CSV files to disk:
-- test_scenarios/1_all_secure.csv
-- test_scenarios/2_all_spoofed.csv
-- test_scenarios/3_mixed.csv
-
-Upload these as Input 2 (Payload Telemetry) to 
-reproduce each test scenario.
-
-## Offline Demo
-Run mission_report.py during a period of reliable 
-network access to pre-collect frozen AIS and 
-satellite data for offline demonstration:
-- demo_ships_frozen.csv  → upload as Input 1
-- demo_sats_frozen.csv   → upload as Input 2
