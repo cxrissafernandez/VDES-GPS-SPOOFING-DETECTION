@@ -44,8 +44,9 @@ Upload these as Input 2 (Payload Telemetry) to
 reproduce each test scenario.
 
 ## Offline Demo
-Run mission_report.py during a period of reliable 
-network access to pre-collect frozen AIS and 
-satellite data for offline demonstration:
+Run mission_report.py to pre-collect real AIS and 
+satellite data, saving them as frozen files that 
+can be uploaded into the app to demonstrate the 
+system using actual live data:
 - demo_ships_frozen.csv  → upload as Input 1
 - demo_sats_frozen.csv   → upload as Input 2
