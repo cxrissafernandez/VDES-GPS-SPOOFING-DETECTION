@@ -63,6 +63,8 @@ def parse_uploaded_file(uploaded_file):
 # --- SESSION STATE ---
 if 'ais_data' not in st.session_state: st.session_state['ais_data'] = None
 if 'sat_data' not in st.session_state: st.session_state['sat_data'] = None
+if 'last_ship_file' not in st.session_state: 
+    st.session_state['last_ship_file'] = ''
 
 # --- SIDEBAR ---
 st.sidebar.header("CONTROL PANEL")
@@ -92,7 +94,8 @@ if input_mode == "Live Stream":
             st.sidebar.error(f"Scan Failed: {e}")
 else:
     ship_file = st.sidebar.file_uploader("Upload AIS Data", type=["csv", "txt", "log"], key="ship_up")
-    if ship_file:
+    if ship_file and ship_file.name != st.session_state.get('last_ship_file', ''):
+        st.session_state['last_ship_file'] = ship_file.name
         df = parse_uploaded_file(ship_file)
         cleaned = clean_dataframe(df).drop_duplicates(subset=['mmsi'], keep='last')
         if cleaned.empty:
