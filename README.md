@@ -50,3 +50,17 @@ can be uploaded into the app to demonstrate the
 system using actual live data:
 - demo_ships_frozen.csv  → upload as Input 1 (AIS Ship Data)
 - demo_sats_frozen.csv   → upload as Input 2 (Payload Telemetry)
+
+## Sample NMEA Files
+Sample raw NMEA AIS log files are 
+included in the repository for testing the NMEA file 
+upload pathway in Input 1.
+
+## C-Language AIS Decoder
+- original_decoder/decoder_original.c
+
+A C-language implementation of the AIS decoder developed 
+for future integration with the A*STAR VDES satellite 
+payload's C-based processing environment. Supports a 
+broader range of AIS message types than decoder.py.
+Refer to the project report for details.
